@@ -1,0 +1,13 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix github.com/mura-s/bazelsample
+gazelle(name = "gazelle")
+
+go_library(
+    name = "go_default_library",
+    srcs = ["sample.go"],
+    importpath = "github.com/mura-s/bazelsample",
+    visibility = ["//visibility:public"],
+    deps = ["@com_github_pkg_errors//:go_default_library"],
+)
