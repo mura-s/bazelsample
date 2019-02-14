@@ -24,30 +24,12 @@ gazelle_dependencies()
 
 go_repository(
     name = "com_github_pkg_errors",
+    commit = "ffb6e22f01932bf7ac35e0bad9be11f01d1c8685",
     importpath = "github.com/pkg/errors",
-    tag = "v0.8.1",
-)
-
-go_repository(
-    name = "com_github_davecgh_go_spew",
-    importpath = "github.com/davecgh/go-spew",
-    tag = "v1.1.1",
-)
-
-go_repository(
-    name = "com_github_pmezard_go_difflib",
-    importpath = "github.com/pmezard/go-difflib",
-    tag = "v1.0.0",
-)
-
-go_repository(
-    name = "com_github_stretchr_objx",
-    importpath = "github.com/stretchr/objx",
-    tag = "v0.1.1",
 )
 
 go_repository(
     name = "com_github_stretchr_testify",
+    commit = "363ebb24d041ccea8068222281c2e963e997b9dc",
     importpath = "github.com/stretchr/testify",
-    tag = "v1.3.0",
 )
